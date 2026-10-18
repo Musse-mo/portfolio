@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <img class="logo-photo" src="prof.png" alt="My photo" />           
+      <span class="logo-name">RABIIC JULDHE</span>        
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- ========== SECTIONS (we fill these step by step) ========== -->
+  <main>
+    <section id="home">
+
+  <div class="hero-content">
+    <p class="hello">Hello, I'm</p>
+
+    <h1 class="hero-name">Rabiic Juldhe</h1>                  
+    <h2 class="hero-title">Computer Science Student</h2>    
+
+    <p class="hero-roles">
+      <span class="role-blue">Code And Creativity</span>              
+      <span class="role-green">Networking Enthusiast</span>
+      <span class="role-purple">Turning Ideas into Memories</span>
+    </p>
+
+    <p class="hero-intro">
+      I am Rabiic Juldhe, a Computer Sciense developer and networking enthusiast passionate about building innovative solutions and exploring technology.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View My Projects →</a>
+      <a href="cv.pdf" download class="btn btn-outline">Download CV</a>   <!-- EDIT: your CV file name -->
+    </div>
+
+    <div class="socials" id="home-socials"></div>
+  </div>
+
+  <!-- Four small cards (EDIT: change the text, icons and colors) -->
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon blue"><i class="fa-solid fa-code"></i></div>
+      <div><h3>Web Development</h3><p>Building responsive web apps.</p></div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon green"><i class="fa-solid fa-network-wired"></i></div>
+      <div><h3>Networking</h3><p>LANs, routers and security.</p></div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon purple"><i class="fa-solid fa-database"></i></div>
+      <div><h3>Systems & Software</h3><p>OS, databases, real systems.</p></div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon amber"><i class="fa-solid fa-lightbulb"></i></div>
+      <div><h3>Always Learning</h3><p>New tech, bigger goals.</p></div>
+    </div>
+  </div>
+
+</section>
+   <section id="about">
+
+  <h2 class="section-title">About <span>Me</span></h2>
+
+  <div class="about-wrap">
+
+   
+    <div class="about-photo">
+      <img src="profile.png" alt="My photo" />
+    </div>
+
+    <div class="about-info">
+
+
+      <p class="about-text">
+       I am Muuse Mohamud ismail aka Rabiic Juldhe, a Computer Science student, developer,
+        and networking enthusiast based in Jimma, Ethiopia. I enjoy building practical digital solutions,
+         exploring software development and networking technologies, and solving real-world problems through technology. 
+       My goal is to continuously improve my skills, embrace new challenges, and grow into a skilled IT professional.
+      </p>
+
+    
+      <div class="about-facts">
+        <div class="fact">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Education</h3>
+          <p>Last Year Student at Jimma University</p>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Location</h3>
+          <p>Jimma, Ethiopia</p>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Focus</h3>
+          <p>Computer Networking and continuouss learning in Technology </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+    <section id="projects">
+
+  <h2 class="section-title">My <span>Projects</span></h2>
+
+  <!-- The project cards are built automatically from the PROJECTS list in script.js -->
+  <div class="projects-grid" id="projects-grid"></div>
+
+</section>
+
+
+ <section id="skills">
+
+  <div class="skills-header">
+    <p class="eyebrow"><span class="line"></span>MY SKILLS<span class="line"></span></p>
+    <h2 class="section-title">What I <span>Work With</span></h2>
+    <p class="skills-sub">
+      The technologies and tools I use and keep exploring.   <!-- EDIT: keep it short -->
+    </p>
+  </div>
+
+  <!-- The six skill cards are built automatically from the SKILLS list in script.js -->
+  <div class="skills-grid" id="skills-grid"></div>
+
+</section>
+
+
+
+
+  <section id="contact">
+
+  <div class="skills-header">
+    <p class="eyebrow"><span class="line"></span>CONTACT<span class="line"></span></p>
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+    <p class="skills-sub">
+      Feel free to reach out through any of these.   <!-- EDIT: keep it short -->
+    </p>
+  </div>
+
+  <!-- The contact cards are built automatically from the LINKS list in script.js -->
+  <div class="contact-grid" id="contact-grid"></div>
+
+  <!-- EDIT: your name -->
+  <footer class="footer">© 2026 Rabiic Juldhe</footer>
+
+</section>
+
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
