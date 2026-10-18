@@ -285,6 +285,9 @@ section {
 /* Respect people who turn off animations in their system */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
+
+  /* with no animation, show everything right away */
+  .about-photo, .about-info, .skill-card, .project-card, .contact-card { opacity: 1 !important; }
 }
 
 /* ========== SHARED SECTION TITLE (used by all sections) ========== */
