@@ -855,3 +855,52 @@ section {
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(30, 123, 255, 0.7);
 }
+
+
+
+
+
+
+
+
+/* ========== PHONE MENU ========== */
+.menu-btn { display: none; }   /* hidden on computers */
+
+@media (max-width: 800px) {
+  .navbar { padding: 12px 5%; gap: 10px; }
+  .logo-name { font-size: 0.95rem; }
+
+  /* theme button and ☰ button sit together on the right */
+  .theme-btn { margin-left: auto; }
+
+  .menu-btn {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .menu-btn:hover { border-color: var(--accent); }
+
+  /* the links become a dropdown under the bar, closed until you tap ☰ */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 5% 18px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { text-align: center; padding: 12px 18px; }
+}

@@ -2,7 +2,7 @@
 // Put your link between the quotes. Leave "" empty to hide that icon.
 const LINKS = {
   telegram:  "https://t.me/Muusa_Rabiic",   
-  whatsapp:  "https://wa.me/25907549864",   
+  whatsapp:  "https://wa.me/252907549864",   
   instagram: "https://instagram.com/RABIIC_JULDHE",   
   facebook:  "",   
 //  email:     "",  
@@ -229,12 +229,20 @@ const PROJECTS = [
   //   tags: ["C++", "OpenGL"],
   //   link: "",   // example: "https://github.com/yourusername/aeroplane-game"
   // },
-  // {
-  //   title: "My Portfolio",
-  //   desc: "This website, built with HTML, CSS and JavaScript.",
-  //   tags: ["HTML", "CSS", "JavaScript"],
-  //   link: "",
-  // },
+
+  {
+    title: "My Portfolio",
+    desc: "This website, built with HTML, CSS and JavaScript.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://musse-mo.github.io/portfolio/",
+  },
+
+  {
+    title: "More Projects Coming Soon",
+    desc: "Keep an eye on this space for more projects in the future.",
+    tags: ["Coming Soon"],
+    link: "",
+   },
 ];
 
 // Builds the project cards 
@@ -296,3 +304,26 @@ function renderContact() {
 }
 
 renderContact();
+
+
+
+
+
+
+
+// ========== PHONE MENU (☰ button) ==========
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuBtn.textContent = isOpen ? "✕" : "☰";
+});
+
+// Close the menu after tapping a link
+navLinks.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuBtn.textContent = "☰";
+  });
+});
